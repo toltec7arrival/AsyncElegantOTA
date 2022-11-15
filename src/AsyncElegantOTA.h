@@ -23,7 +23,7 @@
 #include "ESPAsyncWebServer.h"
 #include "FS.h"
 
-#include "elegantWebpage.h"
+// #include "elegantWebpage.h"
 
 
 class AsyncElegantOtaClass{
@@ -46,7 +46,5 @@ class AsyncElegantOtaClass{
         bool _authRequired = false;
 
 };
-
-extern AsyncElegantOtaClass AsyncElegantOTA;
 
 #endif

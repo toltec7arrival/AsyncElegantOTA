@@ -32,6 +32,7 @@ void AsyncElegantOtaClass::begin(AsyncWebServer *server, const char* username, c
         #endif
     });
 
+    /*/
     _server->on("/update", HTTP_GET, [&](AsyncWebServerRequest *request){
         if(_authRequired){
             if(!request->authenticate(_username.c_str(), _password.c_str())){
@@ -42,6 +43,8 @@ void AsyncElegantOtaClass::begin(AsyncWebServer *server, const char* username, c
         response->addHeader("Content-Encoding", "gzip");
         request->send(response);
     });
+
+    */
 
     _server->on("/update", HTTP_POST, [&](AsyncWebServerRequest *request) {
         if(_authRequired){
