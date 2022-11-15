@@ -1,6 +1,5 @@
 #include <AsyncElegantOTA.h>
 
-AsyncElegantOtaClass AsyncElegantOTA;
 
 void AsyncElegantOtaClass::setID(const char* id){
     _id = id;
